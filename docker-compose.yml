@@ -18,10 +18,6 @@ services:
     container_name: java
     env_file:
       - ./mysql/db.env
-    environment:
-      - MYSQL_URL=${MYSQL_URL}
-      - MYSQL_USER=${MYSQL_USER}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
     tty: true
     working_dir: /app
     volumes:
