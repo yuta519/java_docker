@@ -1,4 +1,4 @@
-## Jaca Springboot with docker
+## Java Springboot with docker
 
 ### Stacks
 - JDK 17
