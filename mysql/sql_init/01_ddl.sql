@@ -21,3 +21,10 @@ CREATE TABLE IF NOT EXISTS sample_schema.users(
     phone         varchar(30) NOT NULL,
     INDEX(uuid)
 );
+
+CREATE TABLE IF NOT EXISTS sample_schema.doctor_schedules(
+    uuid          int PRIMARY KEY AUTO_INCREMENT,
+    doctor_uuid   int,
+    time          varchar(30) NOT NULL,
+    INDEX(uuid)
+);
