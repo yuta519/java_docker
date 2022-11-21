@@ -3,9 +3,10 @@
 ### Stacks
 - JDK 17
 - MySQL 5.7
-- gradle
-- docker
+- gradle 7.3.1
 
+### Requirements
+- Docker Desktop
 
 ### Installation
 1. Install docker
@@ -13,5 +14,5 @@
 - Please install Docker Desktop. Need to choose installer depending on your OS.
 - After installation, run Docker Desktop.
 - Check installation. Open your terminal and put the below command.
+  - If version appears, it goes well.
 > docker --version
-- If version appears, it goes well.
