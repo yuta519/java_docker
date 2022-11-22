@@ -6,6 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      const storage = localStorage;
+      console.log(storage.getItem('user'));
+      storage.clear();
+    </script>
     <style type="text/tailwindcss">
       @layer utilities {
         .content-auto {
@@ -22,6 +27,7 @@
       <div>
         <span>Appointment date: </span>
         <span class="" th:text="${selected_time}"></span>
+        <span class="" th:text="${login_user}"></span>
       </div>
       <div>
         <span>Docotor in charge: </span>

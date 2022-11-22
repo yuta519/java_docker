@@ -18,4 +18,9 @@ public class UserService {
     public List<UserEntity> fetchUsers() {
         return userRepository.findAll();
     }
+
+    public UserEntity find_user_by_uuid(int uuid) {
+        return userRepository.findById(uuid).orElseThrow();
+    }
+
 }
