@@ -33,4 +33,11 @@ public class UserEntity {
 
     @Column(name = "phone")
     private String phone;
+
+    public void set_email(String email){ this.email = email; }
+    public void set_password(String password){ this.password = password; }
+    public void set_first_name(String first_name){ this.first_name =first_name; }
+    public void set_last_name(String last_name){ this.last_name = last_name; }
+    public void set_birthdate(String birthdate){ this.birthdate = birthdate; }
+    public void set_phone(String phone){ this.phone = phone; }
 }
