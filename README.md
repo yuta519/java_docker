@@ -28,3 +28,6 @@
 > docker compose build
 
 > docker compose up
+
+4. Access web application
+- Access `http://localhost:8080/book` with your web browser.
