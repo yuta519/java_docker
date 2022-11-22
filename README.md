@@ -19,4 +19,5 @@
 
 2. Run application
 > docker compose build
+
 > docker compose up
