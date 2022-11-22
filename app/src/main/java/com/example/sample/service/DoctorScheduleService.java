@@ -18,4 +18,8 @@ public class DoctorScheduleService {
     public List<DoctorScheduleEntity> fetchSchedules() {
         return doctorScheduleRepository.findAll();
     }
+
+    public DoctorScheduleEntity find_schedule_by_uuid(Integer schedule_id) {
+        return doctorScheduleRepository.findById(schedule_id).orElseThrow();
+    }
 }

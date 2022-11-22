@@ -18,4 +18,6 @@ public class DoctorEntity {
 
     @Column(name = "name")
     private String name;
+
+    public String get_name() { return name; }
 }

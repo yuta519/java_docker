@@ -18,4 +18,8 @@ public class DoctorService {
     public List<DoctorEntity> fetchDoctors() {
         return doctorRepository.findAll();
     }
+
+    public DoctorEntity find_doctor_by_uuid(Integer uuid) {
+        return doctorRepository.findById(uuid).orElseThrow();
+    }
 }

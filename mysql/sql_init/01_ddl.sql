@@ -36,3 +36,10 @@ CREATE TABLE IF NOT EXISTS sample_schema.doctors(
     name          varchar(30) NOT NULL,
     INDEX(uuid)
 );
+
+CREATE TABLE IF NOT EXISTS sample_schema.appointments(
+    uuid                    int PRIMARY KEY AUTO_INCREMENT,
+    doctor_schedule_uuid    int NOT NULL,
+    user_uuid               int NOT NULL,
+    INDEX(uuid)
+);

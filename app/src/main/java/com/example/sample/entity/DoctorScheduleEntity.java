@@ -16,8 +16,13 @@ public class DoctorScheduleEntity {
     private int uuid;
 
     @Column(name = "doctor_uuid")
-    private String email;
+    private int doctor_uuid;
 
     @Column(name = "time")
     private String time;
+
+    // Getter
+    public int get_uuid() { return uuid; }
+    public int get_doctor_uuid() { return doctor_uuid; }
+    public String get_time() { return time; }
 }
