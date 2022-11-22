@@ -5,8 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import com.example.sample.service.DoctorService;
 import com.example.sample.service.DoctorScheduleService;
-import com.example.sample.service.UserService;
 
 @Controller
 public class BookController {
@@ -14,16 +14,14 @@ public class BookController {
     DoctorScheduleService doctorScheduleService;
 
     @Autowired
-    UserService userService;
+    DoctorService doctorService;
 
     @GetMapping("/book")
     public String geeting(
-        @RequestParam(name = "name", required = false, defaultValue = "World") String name,
         Model model
     ) {
-        model.addAttribute("name", name);
-        model.addAttribute("users", userService.fetchUsers());
         model.addAttribute("schedules", doctorScheduleService.fetchSchedules());
+        model.addAttribute("doctors", doctorService.fetchDoctors());
         return "book_appointment";
     }
 }
