@@ -17,7 +17,14 @@
   - If version appears, it goes well.
 > docker --version
 
-2. Run application
+2. Initial Setup
+- Run the below command and create `mysql/db.env`.
+>  cp ./mysql/db.env_sample ./mysql/db.env
+
+- Change credential information in `db.env`.
+
+
+3. Run application
 > docker compose build
 
 > docker compose up

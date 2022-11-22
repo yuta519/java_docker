@@ -13,3 +13,5 @@ INSERT INTO sample_schema.doctor_schedules (doctor_uuid, time) VALUES
 (1, '2000/01/01 10:00:00'),
 (1, '2000/01/01 10:15:00'),
 (1, '2000/01/01 10:30:00');
+
+INSERT INTO sample_schema.doctors (name) VALUES ('Prabh'), ('aaa'), ('bbb');
