@@ -16,3 +16,7 @@
 - Check installation. Open your terminal and put the below command.
   - If version appears, it goes well.
 > docker --version
+
+2. Run application
+> docker compose build
+> docker compose up
