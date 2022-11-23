@@ -8,7 +8,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       const storage = localStorage;
-      console.log(storage.getItem('user'));
       storage.clear();
     </script>
     <style type="text/tailwindcss">
@@ -27,15 +26,13 @@
       <div>
         <span>Appointment date: </span>
         <span class="" th:text="${selected_time}"></span>
-        <span class="" th:text="${login_user}"></span>
       </div>
       <div>
         <span>Docotor in charge: </span>
         <span class="" th:text="${selected_doctor}"></span>
       </div>
     </div>
-    <a href="/home">
-      <button class="btn btn-green" href="/home">Go back to home</button>
-    </a>
+    <p><a th:href="@{/home}">Go back to home</a></p>
+    <p><a th:href="@{/book}">Continue to book an appointment</a></p>
   </body>
 </html>
