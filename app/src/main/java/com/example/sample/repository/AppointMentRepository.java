@@ -2,8 +2,16 @@ package com.example.sample.repository;
 
 import com.example.sample.entity.AppointmentEntity;
 
+// import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+// import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AppointMentRepository extends JpaRepository<AppointmentEntity, Integer> {}
+public interface AppointMentRepository extends JpaRepository<AppointmentEntity, Integer> {
+
+    // @Query("SELECT a FROM appointments a WHERE a.user_uuid = ?1")
+    // List<AppointmentEntity> fetchByUserUuid(int user_uuid);
+
+}

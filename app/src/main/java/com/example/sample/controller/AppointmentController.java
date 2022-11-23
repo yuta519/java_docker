@@ -15,6 +15,7 @@ public class AppointmentController {
     @GetMapping("/appointments")
     public String getAppointments(Model model) {
         model.addAttribute("appointments", appointmentService.get_appointments());
+        // model.addAttribute("appointments", appointmentService.get_appointments_by_user_uuid(1));
         return "appointments";
     }
 }
